@@ -1,0 +1,25 @@
+{
+	"name": "wpengine/composer-test.dev",
+	"require": {
+		"wpengine/advanced-custom-fields-pro": "*"
+	},
+	"description": "ACF PRO in a WordPress site",
+	"repositories": [
+		{
+			"type": "composer",
+			"url": "https://connect.advancedcustomfields.com"
+		}
+	],
+	"extra": {
+		"installer-paths": {
+			"wp-content/plugins/{$name}/": [
+				"type:wordpress-plugin"
+			]
+		}
+	},
+	"config": {
+		"allow-plugins": {
+			"composer/installers": true
+		}
+	}
+}
